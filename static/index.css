@@ -1,0 +1,121 @@
+body {
+    background-color: #151A1F;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.separate-overlay-wrap {
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+}
+
+.big-wrap {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.navbar {
+    display: flex;
+    margin: 1rem 0 0.6rem 0;
+    justify-content: space-between;
+}
+
+.top-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1.my-name, .git {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+h1.location, .funky-time, .about {
+    display: flex;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+h1.hey, h1.a {
+    font-family: "Plus Jakarta Sans";
+    font-size: 93px;
+    font-weight: 500;
+    /* margin: 2rem 0 1rem 0; */
+}
+
+.awhatami-wrap{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.whatami {
+    font-family: 'Prata';
+    font-size: 93px;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Plus Jakarta Sans";
+    font-size: 19px;
+    font-weight: 300;
+}
+
+p.desc {
+    width: 815px;
+}
+
+.main-text {
+    margin-top: 7rem;
+}
+
+.sub-head {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nine {
+    z-index: 1;
+}
+
+.eight {
+    z-index: 0;
+}
+
+.eight, .seven {
+    margin-top: -6rem;
+} 
+
+.square-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rec-wrap {
+    display: flex;
+    flex-direction: column; 
+    width: 240px;
+    height: auto;
+}
