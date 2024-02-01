@@ -105,20 +105,21 @@ p.desc {
     display: flex;
     gap: 1.5rem;
 }
-
+/* 1 because we want it to be brought on top */
 .nine {
     z-index: 1;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
 }
-
+/* 0 bc it's in the middle */
 .eight {
     z-index: 0;
 }
 
 /* negative margin means making items overlap (has an opposite effect) */
 .eight, .seven {
-    margin-top: -6rem;
-} 
+    margin-top: -5.7rem;
+    transition: all 400ms ease-in-out;
+}
 
 .square-bg {
     display: flex;
@@ -157,19 +158,20 @@ a {
 .button-1:hover, .button-2:hover {
     transform: scale(1.2, 1.2);
     transition: 500ms;
-}
 
-/* .square-bg:hover {
-    box-shadow: -1px 2px 55.5px 22px rgba(255,255,255, 0.25);
-    transition: 500ms;
-    
-    /* .nine {
-        margin-bottom: -5rem;
+    .eight, .seven {
+        margin-top: -11.7rem;
+        transition: 500ms;
     }
-    .seven, .eight {
-        margin-bottom: -5rem;
+
+    .seven {
+        z-index: 1;
     }
-} */
+
+    .eight {
+        z-index: 0;
+    }
+}
 
 h1.button-name {
     color: rgba(255, 255, 255, 0.58);
